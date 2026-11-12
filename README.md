@@ -1,3 +1,5 @@
+![Encabezado del taller](docs/assets/workshop-banner.svg)
+
 # Taller de desarrollo de videojuegos 2D · DrawFight
 
 **Proyecto práctico en Unity y C# utilizado para apoyar el taller «Crea tu primer juego 2D en Unity» que impartí.** El prototipo de plataformas permite enseñar mecánicas fundamentales mediante un proyecto editable.
