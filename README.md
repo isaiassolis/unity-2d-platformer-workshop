@@ -1,53 +1,69 @@
 ![Encabezado del taller](docs/assets/workshop-banner.svg)
 
-# Taller de desarrollo de videojuegos 2D · DrawFight
+# Taller de Unity 2D — DrawFight
 
-**Proyecto práctico en Unity y C# utilizado para apoyar el taller «Crea tu primer juego 2D en Unity» que impartí.** El prototipo de plataformas permite enseñar mecánicas fundamentales mediante un proyecto editable.
+**Formación en videojuegos · Desarrollo de plataformas 2D · Unity y C#**
 
-![Vista del juego DrawFight](https://i.postimg.cc/BbcByPyn/game1.jpg)
+Utilicé **DrawFight** como proyecto práctico en el taller **«Crea tu primer juego 2D en Unity»** que impartí. A través de un juego de plataformas, trabajamos conceptos de movimiento, física, interacción con objetos y control del estado de partida.
 
-## Objetivos de aprendizaje
+El proyecto conserva **código C#, escenas, recursos y capturas** que permiten seguir el ejercicio y explorar las mecánicas de un juego 2D.
 
-- Organizar escenas, objetos y componentes en Unity 2D.
-- Programar desplazamiento horizontal, salto y orientación del personaje.
-- Implementar seguimiento de cámara y límites de desplazamiento.
-- Detectar interacciones con objetos recolectables, obstáculos y meta.
-- Controlar puntuación, menús, victoria y derrota.
+![Vista del nivel de DrawFight](https://i.postimg.cc/BbcByPyn/game1.jpg)
 
-## Componentes del proyecto
+## Qué enseñamos con DrawFight
 
-| Script | Concepto |
+- Construir un nivel mediante **escenas, GameObjects y componentes**.
+- Programar movimiento horizontal y salto con física 2D.
+- Cambiar la orientación del personaje según su desplazamiento.
+- Implementar una cámara que sigue al jugador con límites.
+- Detectar recolección de objetos, obstáculos y llegada a la meta.
+- Administrar puntuación, menú, victoria, derrota y reinicio.
+
+## Scripts principales
+
+| Script | Contenido |
 | --- | --- |
-| [PlayerMovement.cs](Assets/Scripts/PlayerMovement.cs) | Movimiento, física 2D, salto y cambio de orientación |
-| [CameraFollow.cs](Assets/Scripts/CameraFollow.cs) | Seguimiento suavizado de cámara y límites |
-| [objectCollect.cs](Assets/Scripts/objectCollect.cs) | Triggers, recolección, obstáculos y condición de victoria |
-| [GameManager.cs](Assets/Scripts/GameManager.cs) | Puntuación, reinicio y estados de victoria/derrota |
-| [MainMenu.cs](Assets/Scripts/MainMenu.cs) | Menú, pausa y persistencia básica con PlayerPrefs |
+| [PlayerMovement.cs](Assets/Scripts/PlayerMovement.cs) | Movimiento del personaje, salto, física 2D y orientación |
+| [CameraFollow.cs](Assets/Scripts/CameraFollow.cs) | Seguimiento suavizado y límites de cámara |
+| [objectCollect.cs](Assets/Scripts/objectCollect.cs) | Triggers, recolección, obstáculos y victoria |
+| [GameManager.cs](Assets/Scripts/GameManager.cs) | Puntuación, reinicio y estados de partida |
+| [MainMenu.cs](Assets/Scripts/MainMenu.cs) | Menú, pausa y uso de PlayerPrefs |
 
-## Capturas históricas
+## Imágenes del proyecto
 
-| Pantalla de inicio | Vista del nivel |
+| Pantalla de inicio | Escenario de juego |
 | --- | --- |
 | ![Inicio de DrawFight](https://i.postimg.cc/gkmDh4XX/Start.jpg) | ![Nivel de DrawFight](https://i.postimg.cc/BbcByPyn/game1.jpg) |
 
-*Imágenes alojadas externamente; su disponibilidad depende del proveedor.*
+*Las imágenes se encuentran alojadas en un servicio externo.*
 
-## Cómo abrirlo
+## Cómo utilizarlo
 
-1. Instala Unity Hub y **Unity 2023.2.20f1**, según [ProjectVersion.txt](ProjectSettings/ProjectVersion.txt).
-2. Clona el repositorio: `git clone https://github.com/isaiassolis/unity-2d-platformer-workshop.git`.
-3. Abre el proyecto en Unity Hub.
-4. Carga `Assets/Scenes/SampleScene.unity` y presiona **Play**.
+1. Instala **Unity Hub** y la versión **Unity 2023.2.20f1**, indicada en [ProjectVersion.txt](ProjectSettings/ProjectVersion.txt).
+2. Clona el repositorio:
+
+   ```bash
+   git clone https://github.com/isaiassolis/unity-2d-platformer-workshop.git
+   ```
+
+3. Abre el proyecto desde Unity Hub.
+4. Carga `Assets/Scenes/SampleScene.unity` y ejecuta con **Play**.
 5. El código utiliza los ejes **Horizontal** y **Jump** del sistema de entrada de Unity.
 
-El repositorio también contiene un ejecutable histórico en `Ejecutable/`; no se ha verificado su ejecución ni su compatibilidad actual. No se realizaron compilaciones ni pruebas del juego durante esta actualización del README.
+El repositorio conserva además un ejecutable histórico en la carpeta `Ejecutable/`. Su compatibilidad dependerá del sistema donde se intente abrir.
 
-## Alcance educativo
+## Mi participación
 
-Este repositorio conserva un **prototipo de aprendizaje**, no un producto comercial terminado. Las mecánicas pueden servir como punto de partida para ejercicios de programación, diseño de niveles y ampliaciones guiadas. Antes de reutilizar recursos de terceros, revisa sus licencias específicas.
+Desarrollé y utilicé este proyecto como **material de apoyo para enseñar programación de videojuegos**. Busqué que los participantes pudieran relacionar cada concepto de C# con una respuesta visible en el juego: movimiento, colisiones, puntuación o cambios de escena.
 
-**Proyecto relacionado:** [Taller Chrome Dino en Unity](https://github.com/isaiassolis/unity-2d-chrome-dino-workshop).
+DrawFight es una base para practicar, modificar scripts, experimentar con los niveles e incorporar nuevas mecánicas.
+
+## Sobre el material
+
+El repositorio se presenta como **proyecto didáctico**, no como videojuego comercial terminado. Antes de distribuir una versión modificada, es necesario comprobar las licencias de los recursos de terceros.
+
+**Taller relacionado:** [Chrome Dino — Mecánicas 2D](https://github.com/isaiassolis/unity-2d-chrome-dino-workshop).
 
 ---
 
-[Perfil profesional y otros proyectos de formación](https://github.com/isaiassolis)
+[Volver a mi portafolio profesional](https://github.com/isaiassolis)
